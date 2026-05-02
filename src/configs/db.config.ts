@@ -10,11 +10,7 @@ const sequelize = new Sequelize({
     port: process.env.DB_PORT ? Number(process.env.DB_PORT): 5432,
     username: process.env.DB_USER as string,
     password: process.env.DB_PASS as string,
-    models: [process.cwd() + "/src/models/*.js"],
+    models: [process.cwd() + "/dist/models"],
 });
-
-sequelize.authenticate()
-    .then(() => console.log("DB connected ✅ "))
-    .catch((err) => console.log("DB connection error ❌ ", err))
 
 export default sequelize;

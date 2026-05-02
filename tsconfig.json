@@ -1,27 +1,13 @@
 {
   "compilerOptions": {
-    "rootDir": "./src",
-    "outDir": "./dist",
-    "module": "nodenext",
+    "module": "commonjs",
     "target": "esnext",
-    "moduleResolution": "nodenext",
-    "lib": ["esnext"],
-    "types": ["node"],
+    
+    "rootDir": "src",
+    "outDir": "dist",
 
-    "strict": true,
-    "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
-    "moduleDetection": "force",
-    "skipLibCheck": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
     "strictPropertyInitialization": false,
-
-    // "allowSyntheticDefaultImports": true,
-    // "declaration": true,
-    // "allowImportingTsExtensions": true,
-    // "emitDeclarationOnly": false,
+    "experimentalDecorators": true,
+    "skipLibCheck": true
   }
-}
+} 
